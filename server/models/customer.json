@@ -1,0 +1,27 @@
+{
+  "name": "Customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Edad": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "orders": {
+      "type": "hasMany",
+      "model": "Order",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

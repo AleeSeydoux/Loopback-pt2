@@ -1,0 +1,29 @@
+{
+  "name": "OrderItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Estatus": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "order": {
+      "type": "belongsTo",
+      "model": "Order",
+      "foreignKey": ""
+    },
+    "item": {
+      "type": "belongsTo",
+      "model": "Item",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
